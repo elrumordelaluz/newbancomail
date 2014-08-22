@@ -11,7 +11,7 @@ One important thing is that we do not support if there is a bug or something lik
 
 Project page and docs: http://elrumordelaluz.github.io/newbancomail/
 
-===================
+------------------
 
 Quick start.
 Download the <a href="https://github.com/elrumordelaluz/newbancomail/blob/master/css/bm.css">bm.css</a> file or <a href="https://github.com/elrumordelaluz/newbancomail/blob/master/css/bm.min.css">bm.min.css</a> minified file, include on your project page and enjoy it.
