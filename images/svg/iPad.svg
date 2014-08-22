@@ -1,0 +1,17 @@
+<svg  xmlns="http://www.w3.org/2000/svg"  
+	 viewBox="0 0 512 512" >
+<g id="iPad">
+	<g>
+		<path style="fill:#424C5B;" d="M395.893,420.158c0,10.77-8.812,19.582-19.582,19.582H135.689c-10.77,0-19.582-8.812-19.582-19.582
+			V91.842c0-10.77,8.812-19.582,19.582-19.582h240.621c10.77,0,19.582,8.812,19.582,19.582V420.158z"/>
+		<rect x="142.959" y="109.151" style="fill:#FEC44C;" width="225.194" height="292.58"/>
+		<circle style="fill:#323B48;" cx="256" cy="93.2" r="2.881"/>
+		<g>
+			<circle style="fill:#323B48;" cx="256" cy="420.737" r="9.215"/>
+			
+				<rect x="252.777" y="417.514" style="opacity:0.2;fill:none;stroke:#FFFFFF;stroke-width:0.5759;stroke-miterlimit:10;" width="6.446" height="6.446"/>
+		</g>
+		<polygon style="opacity:0.05;fill:#FFFFFF;" points="395.893,72.26 205.336,72.26 327.066,439.696 395.893,439.696 		"/>
+	</g>
+</g>
+</svg>

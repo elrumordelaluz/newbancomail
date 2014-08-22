@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	 viewBox="0 0 512 512">
+<polygon style="fill:#E1E6EC;" points="313.7,435.8 303.4,399.4 207.9,399.4 198.1,435.8 181.1,437.9 181.1,441.9 330.7,441.9 
+	330.7,437.9 "/>
+<polygon style="fill:#CED3D9;" points="299.3,384.8 211.9,384.8 207.9,399.4 303.4,399.4 "/>
+<g>
+	<path style="fill:#424C5B;" d="M482.4,347.1V87.8c0-5.3-4.4-9.7-9.7-9.7H39.1c-5.3,0-9.7,4.4-9.7,9.7v259.2H482.4z"/>
+	<path style="fill:#E0E4E9;" d="M29.4,380.2c0,5.3,4.4,9.7,9.7,9.7h433.6c5.3,0,9.7-4.4,9.7-9.7v-32.3h-453V380.2z"/>
+	<rect x="29.4" y="347.1" style="fill:#E0E4E9;" width="453" height="0.9"/>
+</g>
+<rect x="47.2" y="95.6" style="fill:#58B899;" width="417.5" height="234.4"/>
+<g>
+	<rect x="250.4" y="362.5" style="fill:#424C5B;" width="2.7" height="11.1"/>
+	<rect x="254.5" y="362.5" style="fill:#424C5B;" width="2.7" height="11.1"/>
+	<rect x="258.7" y="362.5" style="fill:#424C5B;" width="2.7" height="11.1"/>
+</g>
+<circle style="fill:#E0E4E9;" cx="255.9" cy="86.9" r="1.9"/>
+<polygon style="opacity:0.05;fill:#FFFFFF;" points="482.6,78.5 226.3,78.5 368.7,346.9 482.6,347.1 "/>
+</svg>

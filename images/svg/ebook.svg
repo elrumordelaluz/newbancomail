@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.4 186.8" >
+<g>
+	<path fill="#424C5B" d="M232.3,0c7.2,0,13.1,5.9,13.1,13.1v160.7c0,7.2-5.9,13.1-13.1,13.1H13.1c-7.2,0-13.1-5.9-13.1-13.1L0,13.1
+		C0,5.9,5.9,0,13.1,0L232.3,0z"/>
+	<rect x="24.9" y="142.8" fill="#AEADA4" width="195.1" height="26.1"/>
+	<circle fill="#323B48" cx="14" cy="93.4" r="1.9"/>
+	<g>
+		<circle fill="#323B48" cx="232.7" cy="93.4" r="6.2"/>
+		
+			<rect x="230.6" y="91.3" opacity="0.2" fill="none" stroke="#FFFFFF" stroke-width="0.3846" stroke-miterlimit="10" width="4.3" height="4.3"/>
+	</g>
+	<rect x="25" y="53" fill="#AEADA4" width="195" height="104.7"/>
+	<polygon fill="#EFEDDF" points="112.1,157.8 24.9,157.8 25,18.7 112.1,18.7 	"/>
+	<path fill="#D5D2C8" d="M112.1,18.7v139.1c5.6,0,10.2,4.6,10.2,10.2c0,0,0-134,0-137.6C122.3,18.7,112.1,18.7,112.1,18.7z"/>
+	<path fill="#EFEDDF" d="M132.5,18.8c0,0-10.2,0-10.2,11.6c0,3.6,0,137.5,0,137.5c0-5.6,4.6-10.2,10.2-10.2v0H220V18.8H132.5z"/>
+	<rect x="34.7" y="42.3" fill="#D5D2C8" width="66.1" height="24"/>
+	<rect x="50.2" y="78.4" fill="#D5D2C8" width="50.7" height="4.9"/>
+	<rect x="34.2" y="90.8" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<rect x="144" y="42.3" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<rect x="144" y="54.3" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<rect x="144" y="66.3" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<rect x="144" y="78.3" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<rect x="144" y="90.2" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<rect x="144" y="102.2" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<rect x="144" y="114.2" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<rect x="144" y="126.2" fill="#D5D2C8" width="42.9" height="5.2"/>
+	<rect x="34.2" y="126.7" fill="#D5D2C8" width="39.4" height="5.2"/>
+	<rect x="34.2" y="102.8" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<rect x="34.2" y="114.2" fill="#D5D2C8" width="66.6" height="5.2"/>
+	<g>
+		<path fill="#D5D2C8" d="M42.5,86v-0.5c1.1-0.1,1.3-0.3,1.1-1c-0.2-0.7-0.6-1.7-1-2.7h-3.8c-0.3,0.8-0.6,1.5-0.8,2.3
+			c-0.4,1.1-0.2,1.3,1.1,1.4V86h-3.9v-0.5c1.1-0.2,1.4-0.3,2-1.8l3.7-9.4l0.6-0.2c1.1,3.1,2.3,6.4,3.4,9.5c0.6,1.5,0.8,1.7,2,1.8V86
+			H42.5z M40.8,76.5L40.8,76.5c-0.6,1.5-1.2,3.1-1.7,4.5h3.3L40.8,76.5z"/>
+	</g>
+	<path opacity="7.000000e-002" fill="#FFFFFF" d="M245.4,12.5c-0.3-6.9-6-12.5-13-12.5H13.1C5.9,0,0,5.9,0,13.1v114.2L245.4,46V12.5
+		z"/>
+</g>
+</svg>

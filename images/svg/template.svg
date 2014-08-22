@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 71.1">
+<polygon fill="#424C5B" points="0,29.5 33.2,7.2 66,29.5 66,71.1 0,71.1 "/>
+<g>
+	<path fill="#EBEDF0" d="M57.4,51.4H8.6c-0.6,0-1.2-0.5-1.2-1.2V1.2C7.4,0.5,7.9,0,8.6,0h48.8c0.6,0,1.2,0.5,1.2,1.2v49.1
+		C58.5,50.9,58,51.4,57.4,51.4z"/>
+	<circle fill="#646464" cx="13.8" cy="5.2" r="1.6"/>
+	<circle fill="#9F9F9F" cx="18.8" cy="5.2" r="1.6"/>
+	<circle fill="#9B9B9B" cx="23.8" cy="5.2" r="1.6"/>
+	<rect x="30" y="3.6" fill="#FFFFFF" width="23" height="3.2"/>
+	<rect x="12.2" y="10.4" fill="#FFFFFF" width="40.8" height="35.4"/>
+	<rect x="17.6" y="15.3" fill="#1AB79A" width="30.1" height="5.1"/>
+	<rect x="17.6" y="23" fill="#BDC1C6" width="12.4" height="7.3"/>
+	<rect x="17.6" y="33.3" fill="#BDC1C6" width="12.4" height="7.3"/>
+	<rect x="32.6" y="23" fill="#BDC1C6" width="15.7" height="1.7"/>
+	<rect x="32.6" y="25.8" fill="#BDC1C6" width="15.7" height="1.7"/>
+	<rect x="32.6" y="28.6" fill="#BDC1C6" width="15.7" height="1.7"/>
+	<rect x="32.6" y="33.3" fill="#BDC1C6" width="15.7" height="1.7"/>
+	<rect x="32.6" y="36.1" fill="#BDC1C6" width="15.7" height="1.7"/>
+	<rect x="32.6" y="38.9" fill="#BDC1C6" width="15.7" height="1.7"/>
+</g>
+<polygon fill="#93949D" points="66,71.1 0,71.1 0,29.5 "/>
+<polygon fill="#656977" points="0,71.1 66,71.1 66,29.5 "/>
+</svg>

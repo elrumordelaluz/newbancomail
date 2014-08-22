@@ -1,0 +1,22 @@
+<svg  xmlns="http://www.w3.org/2000/svg"  
+	 viewBox="0 0 512 512" >
+<g id="podium">
+	<g>
+		<polygon style="fill:#6C5B52;" points="396.586,215.985 115.568,215.985 92.637,129.802 419.363,129.802 		"/>
+		<polygon style="opacity:0.05;fill:#221F1F;enable-background:new    ;" points="360.574,215.985 115.568,215.985 92.637,129.802 
+			383.504,129.802 		"/>
+		<path style="fill:#D8DCDC;" d="M364.267,116.875c-6.31-45.862-68.331-66.022-68.946-66.176l3.847-12.004
+			c2.924,0.923,70.331,22.777,77.565,76.487L364.267,116.875z"/>
+		
+			<ellipse transform="matrix(0.1872 -0.9823 0.9823 0.1872 190.873 320.0624)" style="fill:#292A2A;" cx="288.845" cy="44.69" rx="22.469" ry="29.702"/>
+		<polygon style="fill:#7F6A60;" points="419.363,129.802 92.637,129.802 94.946,107.333 417.208,107.333 		"/>
+		<rect x="92.637" y="476.38" style="fill:#7F6A60;" width="326.725" height="13.697"/>
+		<polygon style="fill:#6C5B52;" points="126.957,422.977 385.043,422.977 419.363,476.38 92.637,476.38 		"/>
+		<polygon style="opacity:0.05;fill:#221F1F;enable-background:new    ;" points="126.957,422.977 353.033,422.977 387.506,476.38 
+			92.637,476.38 		"/>
+		<rect x="134.652" y="153.502" style="fill:#7D6B5F;" width="242.851" height="307.18"/>
+		<circle style="opacity:0.16;fill:#FFFFFF;enable-background:new    ;" cx="277.161" cy="308.631" r="29.241"/>
+		<circle style="opacity:0.5;fill:#FFFFFF;enable-background:new    ;" cx="241.457" cy="308.631" r="29.241"/>
+	</g>
+</g>
+</svg>
