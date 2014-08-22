@@ -2,7 +2,7 @@
 NewBancomail Pattern library
 ============================
 
-Ok. Maybe this is a Pattren Library, but fundamentally this is a great package we developed for the new company website styles.
+Ok. Maybe [this](http://elrumordelaluz.github.io/newbancomail/) is a Pattren Library, but fundamentally this is a great package we developed for the [new company website](http://www.bancommunity.it/) styles.
 
 We decided to share it because maybe it's useful for any new project, because we love your feedback and also to grow togheter
 
@@ -13,5 +13,10 @@ Project page and docs: http://elrumordelaluz.github.io/newbancomail/
 
 ------------------
 
-Quick start.
-Download the <a href="https://github.com/elrumordelaluz/newbancomail/blob/master/css/bm.css">bm.css</a> file or <a href="https://github.com/elrumordelaluz/newbancomail/blob/master/css/bm.min.css">bm.min.css</a> minified file, include on your project page and enjoy it.
+### Quick start. 
+1. Download the [bm.css](https://github.com/elrumordelaluz/newbancomail/blob/master/css/bm.css) file or the minified version [bm.min.css](https://github.com/elrumordelaluz/newbancomail/blob/master/css/bm.min.css).
+2. Include it in your project page. ```<link rel="stylesheet" href="css/bm.css">```
+3. Enjoy it!
+
+
+
