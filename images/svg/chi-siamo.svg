@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+	<style>
+	#lenses, #inside-lenses {
+	  -webkit-animation: lenses 7s infinite;
+	  -moz-animation: lenses 7s infinite;
+	  -ms-animation: lenses 7s infinite;
+	  -o-animation: lenses 7s infinite;
+	  animation: lenses 7s infinite;
+	  -webkit-transform-origin: center center;
+	  -moz-transform-origin: center center;
+	  -ms-transform-origin: center center;
+	  -o-transform-origin: center center;
+	  transform-origin: center center;
+	}
+
+	@-webkit-keyframes lenses {
+	  /* line 24, ../../scss/pages/about/_index.scss */
+	  25% {
+	    -webkit-transform: translateX(-25px) translateY(15px);
+	    -moz-transform: translateX(-25px) translateY(15px);
+	    -ms-transform: translateX(-25px) translateY(15px);
+	    -o-transform: translateX(-25px) translateY(15px);
+	    transform: translateX(-25px) translateY(15px);
+	  }
+
+	  /* line 25, ../../scss/pages/about/_index.scss */
+	  45% {
+	    -webkit-transform: translateX(-32px) translateY(-5px);
+	    -moz-transform: translateX(-32px) translateY(-5px);
+	    -ms-transform: translateX(-32px) translateY(-5px);
+	    -o-transform: translateX(-32px) translateY(-5px);
+	    transform: translateX(-32px) translateY(-5px);
+	  }
+
+	  /* line 26, ../../scss/pages/about/_index.scss */
+	  75% {
+	    -webkit-transform: translateY(-5px);
+	    -moz-transform: translateY(-5px);
+	    -ms-transform: translateY(-5px);
+	    -o-transform: translateY(-5px);
+	    transform: translateY(-5px);
+	  }
+	}
+
+	@-moz-keyframes lenses {
+	  /* line 24, ../../scss/pages/about/_index.scss */
+	  25% {
+	    -webkit-transform: translateX(-25px) translateY(15px);
+	    -moz-transform: translateX(-25px) translateY(15px);
+	    -ms-transform: translateX(-25px) translateY(15px);
+	    -o-transform: translateX(-25px) translateY(15px);
+	    transform: translateX(-25px) translateY(15px);
+	  }
+
+	  /* line 25, ../../scss/pages/about/_index.scss */
+	  45% {
+	    -webkit-transform: translateX(-32px) translateY(-5px);
+	    -moz-transform: translateX(-32px) translateY(-5px);
+	    -ms-transform: translateX(-32px) translateY(-5px);
+	    -o-transform: translateX(-32px) translateY(-5px);
+	    transform: translateX(-32px) translateY(-5px);
+	  }
+
+	  /* line 26, ../../scss/pages/about/_index.scss */
+	  75% {
+	    -webkit-transform: translateY(-5px);
+	    -moz-transform: translateY(-5px);
+	    -ms-transform: translateY(-5px);
+	    -o-transform: translateY(-5px);
+	    transform: translateY(-5px);
+	  }
+	}
+
+	@-ms-keyframes lenses {
+	  /* line 24, ../../scss/pages/about/_index.scss */
+	  25% {
+	    -webkit-transform: translateX(-25px) translateY(15px);
+	    -moz-transform: translateX(-25px) translateY(15px);
+	    -ms-transform: translateX(-25px) translateY(15px);
+	    -o-transform: translateX(-25px) translateY(15px);
+	    transform: translateX(-25px) translateY(15px);
+	  }
+
+	  /* line 25, ../../scss/pages/about/_index.scss */
+	  45% {
+	    -webkit-transform: translateX(-32px) translateY(-5px);
+	    -moz-transform: translateX(-32px) translateY(-5px);
+	    -ms-transform: translateX(-32px) translateY(-5px);
+	    -o-transform: translateX(-32px) translateY(-5px);
+	    transform: translateX(-32px) translateY(-5px);
+	  }
+
+	  /* line 26, ../../scss/pages/about/_index.scss */
+	  75% {
+	    -webkit-transform: translateY(-5px);
+	    -moz-transform: translateY(-5px);
+	    -ms-transform: translateY(-5px);
+	    -o-transform: translateY(-5px);
+	    transform: translateY(-5px);
+	  }
+	}
+
+	@keyframes lenses {
+	  /* line 24, ../../scss/pages/about/_index.scss */
+	  25% {
+	    -webkit-transform: translateX(-25px) translateY(15px);
+	    -moz-transform: translateX(-25px) translateY(15px);
+	    -ms-transform: translateX(-25px) translateY(15px);
+	    -o-transform: translateX(-25px) translateY(15px);
+	    transform: translateX(-25px) translateY(15px);
+	  }
+
+	  /* line 25, ../../scss/pages/about/_index.scss */
+	  45% {
+	    -webkit-transform: translateX(-32px) translateY(-5px);
+	    -moz-transform: translateX(-32px) translateY(-5px);
+	    -ms-transform: translateX(-32px) translateY(-5px);
+	    -o-transform: translateX(-32px) translateY(-5px);
+	    transform: translateX(-32px) translateY(-5px);
+	  }
+
+	  /* line 26, ../../scss/pages/about/_index.scss */
+	  75% {
+	    -webkit-transform: translateY(-5px);
+	    -moz-transform: translateY(-5px);
+	    -ms-transform: translateY(-5px);
+	    -o-transform: translateY(-5px);
+	    transform: translateY(-5px);
+	  }
+	}
+
+	</style>
+<g>
+	<g>
+		<path style="fill:#E6E7E8;" d="M26.1,64.3h-8.4c-3.7,0-6.6-3-6.6-6.6v-8.4c0-8.3,6.7-15,15-15s15,6.7,15,15S34.4,64.3,26.1,64.3zM26.1,39.1c-5.6,0-10.2,4.6-10.2,10.2v7.6c0,1.4,1.2,2.6,2.6,2.6h7.6c5.6,0,10.2-4.6,10.2-10.2S31.7,39.1,26.1,39.1z"/>
+		<g>
+			<circle style="fill:#E6E7E8;" cx="37.5" cy="29.4" r="3.3"/>
+		</g>
+		<g>
+			<circle style="fill:#E6E7E8;" cx="45.9" cy="37.8" r="3.3"/>
+		</g>
+	</g>
+	<g id="lenses">
+		<circle style="opacity:0.2;fill:#A0DCF8;" cx="53.5" cy="43.3" r="17.8"/>
+		<path style="fill:#6E5C50;" d="M53.5,21.4c-12.1,0-21.9,9.8-21.9,21.9c0,12.1,9.8,21.9,21.9,21.9c12.1,0,21.9-9.8,21.9-21.9C75.4,31.2,65.6,21.4,53.5,21.4z M53.5,61.1c-9.8,0-17.8-8-17.8-17.8c0-9.8,8-17.8,17.8-17.8c9.8,0,17.8,8,17.8,17.8C71.2,53.1,63.3,61.1,53.5,61.1z"/>
+		<path style="opacity:0.3;fill:#5D5E5E;" d="M53.5,28.1c7.7,0,14.3,4.6,17.3,11.2c-1.8-7.9-8.9-13.7-17.3-13.7c-8.4,0-15.5,5.9-17.3,13.7C39.1,32.7,45.8,28.1,53.5,28.1z"/>
+		<path style="fill:#6E5C50;" d="M88.7,72.1l-11-11c-0.6-0.6-1.6-0.7-2.3-0.3l-3.5-3.5l-3.8,3.8l3.5,3.5c-0.5,0.7-0.4,1.8,0.2,2.4l11,11c0.7,0.7,1.9,0.7,2.7,0l3.2-3.2C89.4,74.1,89.4,72.9,88.7,72.1z"/>
+	</g>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="53.5" cy="43.3" r="17.8"/>
+		</defs>
+		<clipPath id="inside-lenses">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#inside-lenses);">
+			<path style="fill:#547DAA;" d="M26.1,64.3h-8.4c-3.7,0-6.6-3-6.6-6.6v-8.4c0-8.3,6.7-15,15-15s15,6.7,15,15S34.4,64.3,26.1,64.3zM26.1,39.1c-5.6,0-10.2,4.6-10.2,10.2v7.6c0,1.4,1.2,2.6,2.6,2.6h7.6c5.6,0,10.2-4.6,10.2-10.2S31.7,39.1,26.1,39.1z"/>
+			<g>
+				<circle style="fill:#547DAA;" cx="37.5" cy="29.4" r="3.3"/>
+			</g>
+			<g>
+				<circle style="fill:#547DAA;" cx="45.9" cy="37.8" r="3.3"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

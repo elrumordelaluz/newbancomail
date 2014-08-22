@@ -1,0 +1,52 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus { outline: 0; }
+::selection { background: rgba(241,118,53,0.5); }
+::-moz-selection { background: rgba(241,118,53,0.5); }
+
+*, body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset, img { border: 0; }
+address, caption, cite, dfn, th, var { font-style: normal; font-weight: normal; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; }
+
+a { text-decoration:none; }
+ul, li { list-style:none; }
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]{
+  font-size:1em;
+  line-height:1.5em;
+  display: inline-block;
+  padding: 4px 6px;
+  width:100%;
+  border:none;
+  margin-bottom:7px;
+}

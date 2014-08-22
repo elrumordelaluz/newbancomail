@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	 viewBox="0 0 512 512">
+<g>
+	<circle style="fill:#FBB040;" cx="256" cy="256" r="187.5"/>
+	<g>
+		<polygon style="fill:#FFFFFF;" points="233.7,139.2 283.1,139.2 276,297.2 240.8,297.2 		"/>
+		<circle style="fill:#FFFFFF;" cx="257.2" cy="356.5" r="27.7"/>
+	</g>
+	<path style="opacity:0.05;fill:#231F20;enable-background:new    ;" d="M68.5,256c0,103.5,83.9,187.5,187.5,187.5V68.5
+		C152.5,68.5,68.5,152.5,68.5,256z"/>
+</g>
+</svg>

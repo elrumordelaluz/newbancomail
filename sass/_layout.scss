@@ -1,0 +1,118 @@
+/* 
+*
+* 		Grid stuff
+*
+*/
+
+.fluid {     
+	width: 100%; 
+	*zoom: 1;   
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-ms-box-sizing: border-box;   
+}
+.fluid:before, .fluid:after { display: table; content: ""; }
+.fluid:after { clear: both; }
+.fluid .rtl-inputs [class*="grid"] { float: right; }
+.fluid [class*="grid"] { 
+	display: block; 
+	width: 100%; 
+	position: relative; 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-ms-box-sizing: border-box; 
+	box-sizing: border-box; 
+	float: left; 
+	margin-left: 2.127659574%; 
+	*margin-left: 2.0744680846382977%; 
+} 
+.fluid [class*="grid"]:first-child { margin-left: 0; }
+ 
+.fluid .grid12 { width: 100%; *width: 99.94680851063829%; }
+.fluid .grid11 { width: 91.48936170212765%; *width: 91.43617021276594%; }
+.fluid .grid10 { width: 82.97872340425532%; *width: 82.92553191489361%; }
+.fluid .grid9 { width: 74.46808510638297%; *width: 74.41489361702126%; }
+.fluid .grid8 { width: 65.95744680851064%;  *width: 65.90425531914893%; }
+.fluid .grid7 { width: 57.44680851063829%; *width: 57.39361702127659%; }
+.fluid .grid6 { width: 48.93617021276595%; *width: 48.88297872340425%; }
+.fluid .grid5 { width: 40.42553191489362%; *width: 40.37234042553192%; }
+.fluid .grid4 { width: 31.914893617021278%; *width: 31.861702127659576%; }
+.fluid .grid3 { width: 23.404255319148934%; *width: 23.351063829787233%; } 
+.fluid .grid2 { width: 14.893617021276595%; *width: 14.840425531914894%; }
+.fluid .grid1 { width: 6.382978723404255%; *width: 6.329787234042553%; } 
+
+.fluid .offset12 {  margin-left: 104.25531914893617%;  *margin-left: 104.14893617021275%; }
+.fluid .offset12:first-child {  margin-left: 102.12765957446808%;  *margin-left: 102.02127659574467%; }
+.fluid .offset11 {  margin-left: 95.74468085106382%;  *margin-left: 95.6382978723404%; }
+.fluid .offset11:first-child {  margin-left: 93.61702127659574%;  *margin-left: 93.51063829787232%;}
+.fluid .offset10 {  margin-left: 87.23404255319149%;  *margin-left: 87.12765957446807%;}
+.fluid .offset10:first-child {  margin-left: 85.1063829787234%;  *margin-left: 84.99999999999999%;}
+.fluid .offset9 {  margin-left: 78.72340425531914%;  *margin-left: 78.61702127659572%;}
+.fluid .offset9:first-child {  margin-left: 76.59574468085106%;  *margin-left: 76.48936170212764%;}
+.fluid .offset8 {  margin-left: 70.2127659574468%;  *margin-left: 70.10638297872339%;}
+.fluid .offset8:first-child {  margin-left: 68.08510638297872%;  *margin-left: 67.9787234042553%;}
+.fluid .offset7 {  margin-left: 61.70212765957446%;  *margin-left: 61.59574468085106%;}
+.fluid .offset7:first-child {  margin-left: 59.574468085106375%;  *margin-left: 59.46808510638297%;}
+.fluid .offset6 {  margin-left: 53.191489361702125%;  *margin-left: 53.085106382978715%;}
+.fluid .offset6:first-child {  margin-left: 51.063829787234035%;  *margin-left: 50.95744680851063%;}
+.fluid .offset5 {  margin-left: 44.68085106382979%;  *margin-left: 44.57446808510638%;}
+.fluid .offset5:first-child {  margin-left: 42.5531914893617%;  *margin-left: 42.4468085106383%;}
+.fluid .offset4 {  margin-left: 36.170212765957444%;  *margin-left: 36.06382978723405%;}
+.fluid .offset4:first-child {  margin-left: 34.04255319148936%;  *margin-left: 33.93617021276596%;}
+.fluid .offset3 {  margin-left: 27.659574468085104%;  *margin-left: 27.5531914893617%;}
+.fluid .offset3:first-child {  margin-left: 25.53191489361702%;  *margin-left: 25.425531914893618%;}
+.fluid .offset2 {  margin-left: 19.148936170212764%;  *margin-left: 19.04255319148936%;}
+.fluid .offset2:first-child {  margin-left: 17.02127659574468%;  *margin-left: 16.914893617021278%;}
+.fluid .offset1 {  margin-left: 10.638297872340425%;  *margin-left: 10.53191489361702%;}
+.fluid .offset1:first-child {  margin-left: 8.51063829787234%;  *margin-left: 8.404255319148938%;}
+
+
+
+
+/* 
+*
+* 		Sections
+*
+*/
+
+.section {
+	width:100%;
+	min-height:100px;
+	clear:both;
+	float:left;
+	position:relative;
+	@include colorize("", background, "section");
+}
+
+.wrapper { width:960px;	margin:0 auto; position:relative; }
+.wrapper.wrp-small { width:790px; }
+
+
+
+
+
+/* 
+*
+* 		Footer (n' sticky) stuff
+*
+*/
+
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -400px; /* equal to footer height */
+}
+.page-wrap:after { content: ""; display: block; }
+.page-wrap:after, .footer { height:400px; }
+.footer {
+	clear:both;
+	position:relative;
+	background:$dark-grey;
+	width:100%;
+	z-index: 100;
+}
+
+
+
+
+

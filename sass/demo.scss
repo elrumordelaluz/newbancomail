@@ -1,0 +1,201 @@
+@import "base/colors";
+@import "base/mixins";
+@import "compass/css3";
+
+@import url(../font-awesome/css/font-awesome.min.css);
+
+@media (min-width: 979px) { .wrapper { width: 760px; } }
+
+.demo-nav {
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	background:$light-grey;
+	min-height:700px;
+	padding-bottom: 70000px;
+	margin-bottom: -70000px;
+	ul { position: relative;
+		li {
+			a {	display: block;	color:$middle-grey; }
+			position: relative;
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			background:rgba(255,255,255,0.2);
+			margin-bottom:1px;
+			font-size:1.3em;
+			padding-left: 60px;
+			@include transition(background .3s);
+			i {
+				position: absolute;
+				text-align: center;
+				line-height: 50px;
+				width: 50px;
+				height: 50px;
+				left: 0;
+				top: 0;
+				background-color:darken($light-grey,20);
+				color:$light-grey;
+				@include transition(background .3s);
+				font-size:1.3em;
+			}
+			&:hover { background:lighten($light-grey,5);
+				i { background-color:darken($light-grey,30);	}
+			}
+			&.active { background:$background;
+				i { background-color:$green;	}
+			}
+		}
+	} // ul
+	.badge {
+		right: 20px;
+		top: 50%;
+		margin-top: -0.85em;
+		box-shadow:none;
+	}
+}
+
+.demo-container { 
+	position: relative;
+	overflow: hidden;
+	margin-bottom:-80px;
+	padding-bottom: 100px;
+	&:before {
+		content:'';
+		width: 100%;
+		height: 2px;
+		background: $blue;
+		position: absolute;
+		top:0;
+		z-index: 99;
+		@include vendorize(transform, translateX(-100%));
+		@include vendorize(animation, demo-loader 2.5s ease-in-out forwards);
+	}
+}
+
+@include keyframes(demo-loader){
+  to { @include vendorize(transform, translateX(0%)) }
+}
+@include keyframes(demo-loader-mask){
+  to { opacity: 0; z-index: -9999; }
+}
+
+.demo-content {
+	width: auto;
+	margin-left: 240px;
+	margin-right: 40px;
+	padding-top: 20px;
+	.fluid { display: inline-block; }
+}
+
+.back {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	font-size:1.5em;
+	color:rgba($light-grey,.5);
+	text-decoration:none;
+	cursor:pointer;
+	z-index: 999;
+	@include transition(color 0.3s, background-color 0.3s);
+	background-color: darken($light-grey,20);
+	padding: 10px;
+	i { 
+		display: inline-block;
+		@include vendorize(transform, translateY(0px));
+		@include transition(transform 0.3s);
+	}
+	&:hover { 
+		color:rgba($light-grey,.85);
+		i{
+			@include vendorize(transform, translateY(-5px));
+		}
+	}
+	
+}
+
+.copy {
+	width:100%;
+	float:left;
+	text-align:center;
+	color:rgba(255,255,255,0.5);
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+.footer-logo {
+	width:60px;
+	height:60px;
+	background:$dark-grey;
+	position:absolute;
+	left:50%;
+	margin-left:-30px;
+	top:-20px;
+	@include vendorize(transform-origin,50% 50%);
+	@include vendorize(transform,rotate(45deg));
+	font-size:2px;
+	&:hover .flogo { border-color:rgba(255,255,255,0.7)	}
+	&:hover .flogo div{ background:rgba(255,255,255,0.7) }
+}
+
+.flogo {
+	width: 20px; /* 10em  */
+	height: 20px; /* 10em  */
+	border:4px solid rgba(255,255,255,0.3); /* 2em */
+	border-radius:50%;
+	border-bottom-left-radius: 25%;
+	margin: auto;
+	position: absolute;
+	top:0; right:0; bottom:0; left:0;
+	margin-left:12px; /* 6em */
+	margin-top:16px; /* 8em */ 
+	@include transition(all, 0.5s);
+	@include vendorize(transform,rotate(-45deg));
+}
+
+.flogo:after, .flogo:before {
+	content:'';
+	width: 6px; height: 6px; /* 3em */
+	background: rgba(255,255,255,0.3);
+	position: absolute;
+	border-radius: 50%;
+	@include transition(all, 0.5s);
+	@include vendorize(transform-origin,-5em 10em);
+}
+.flogo:after{
+	@include vendorize(animation, logo 10s 1s infinite);
+} 
+.flogo:before {
+	@include vendorize(animation, logo 10s infinite);
+}
+
+.flogo:after { right: -12px; } /* -6em; */
+.flogo:before { right: -4px; top:-10px; } /* -2em / -5em  */
+
+
+@include keyframes(logo) {
+	0%, 94% { @include vendorize(transform,rotate(0deg));  }
+	100% { @include vendorize(transform,rotate(360deg)); }
+}
+
+// Media queries only for demo
+
+@media (max-width: 979px) {
+	.back {
+		right: auto;
+		left: 5px;
+		bottom:5px;
+		background-color: darken($light-grey,10);
+	}
+	.demo-nav {
+		li {
+			width: 50px!important;
+			overflow: hidden;
+			padding-left: 0!important;
+		}
+	}
+
+	.demo-content {
+		margin-left: 90px!important;
+	}
+}

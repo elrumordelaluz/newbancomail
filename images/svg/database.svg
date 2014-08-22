@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	 viewBox="0 0 512 512">
+<g>
+	<g>
+		<ellipse style="fill:#EEF7FD;" cx="255.3" cy="444.7" rx="161.5" ry="22.1"/>
+		<rect x="93.8" y="357.1" style="fill:#EEF7FD;" width="323.1" height="87.6"/>
+		<ellipse style="fill:#8B9BA6;" cx="255.3" cy="357.1" rx="161.5" ry="22.1"/>
+	</g>
+	<rect x="389.9" y="422.5" style="fill:#81C386;" width="11.8" height="11.8"/>
+</g>
+<g>
+	<g>
+		<ellipse style="fill:#EEF7FD;" cx="255.3" cy="322" rx="161.5" ry="22.1"/>
+		<rect x="93.8" y="234.4" style="fill:#EEF7FD;" width="323.1" height="87.6"/>
+		<ellipse style="fill:#8B9BA6;" cx="255.3" cy="234.4" rx="161.5" ry="22.1"/>
+	</g>
+	<rect x="389.9" y="299.9" style="fill:#B11116;" width="11.8" height="11.8"/>
+</g>
+<g>
+	<g>
+		<ellipse style="fill:#EEF7FD;" cx="255.3" cy="199.4" rx="161.5" ry="22.1"/>
+		<rect x="93.8" y="111.8" style="fill:#EEF7FD;" width="323.1" height="87.6"/>
+		<ellipse style="fill:#8B9BA6;" cx="255.3" cy="111.8" rx="161.5" ry="22.1"/>
+	</g>
+	<rect x="389.9" y="177.2" style="fill:#81C386;" width="11.8" height="11.8"/>
+</g>
+<path style="opacity:0.05;fill:#231F20;" d="M363.8,95.4L293,133.3l-34.3,88.2h29.5l-43.1,35l-33.7,86.8l30.9,0.8
+	L198,377.8L164.9,463c25.8,2.4,56.9,3.8,90.4,3.8c89.2,0,161.5-9.9,161.5-22.1v-87.6c0-7.2-24.8-13.5-63.3-17.5
+	c38.5-4,63.3-10.4,63.3-17.5v-87.6c0-7.2-24.8-13.5-63.3-17.5c38.5-4,63.3-10.4,63.3-17.5v-87.6C416.8,105.3,396.4,99.5,363.8,95.4z
+	"/>
+</svg>

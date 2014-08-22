@@ -1,0 +1,401 @@
+@mixin vendorize($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+@mixin placeholder-input($input, $color) {
+  #{$input} input::-webkit-input-placeholder { color:$color; font-style:italic; opacity: .5; }
+  #{$input} input:-moz-placeholder { color:$color; font-style:italic; opacity: .5; }
+  #{$input} input::-moz-placeholder { color:$color; font-style:italic; opacity: .5; }
+  #{$input} input::-ms-input-placeholder { color:$color; font-style:italic; opacity: .5; }
+}
+
+@mixin placeholder-textarea($textarea, $color) {
+  #{$textarea} textarea::-webkit-input-placeholder { color:$color; font-style:italic; opacity: .5; }
+  #{$textarea} textarea:-moz-placeholder { color:$color; font-style:italic; opacity: .5; }
+  #{$textarea} textarea::-moz-placeholder { color:$color; font-style:italic; opacity: .5; }
+  #{$textarea} textarea::-ms-input-placeholder { color:$color; font-style:italic; opacity: .5; }
+}
+
+@mixin long-shadow($type, $color, $length, $fadeout: true, $skew: false, $direction: right){
+  $shadow: '';
+  @if $skew == false or $type == text{
+    @if $direction == right {
+      @for $i from 0 to $length - 1 {
+        $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $color + ',';
+      }
+    }
+    @if $direction == left {
+      @for $i from 0 to $length - 1 {
+        $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $color + ',';
+       }
+      }
+     }
+        
+   @if $fadeout == true{
+    @for $i from 1 to $length - 1 {
+      @if $type == text or $skew == false{
+        @if $direction == right{
+          $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+        }
+        @if $direction == left{
+          $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+        }
+      }
+      @if ($type == box) and $skew == true{
+        @if $direction == right {
+          $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+        }
+        @if $direction == left {
+          $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+        }
+      }
+  }
+  $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba($color, 0);
+ }
+ @if $fadeout == false{
+   @if $skew == true and ( $type == box ){
+     @for $i from 0 to $length - 1 {
+            $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .1 + 'px ' + $color + ',';
+      }
+   }
+    $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
+ }
+ $shadow: unquote($shadow);
+  @if $type == 'box' {box-shadow: $shadow;}
+  @if $type == 'text' {text-shadow: $shadow;}
+}
+
+
+@mixin span {
+  font-size:0.7em; 
+  margin-left:5px;
+  color:rgba($middle-grey,.5);
+  a { color:rgba($middle-grey,.5) }
+  line-height: .7em;
+  &.small {
+    font-size: 0.5em;
+  }
+}
+
+
+@mixin striped-background($color_1, $color_2, $stripe_width: 20px) {
+    background-color: $color_1;
+    background-image: -webkit-repeating-linear-gradient(135deg, transparent, transparent $stripe_width, $color_2 $stripe_width, $color_2 2 * $stripe_width);
+    background-image: -moz-repeating-linear-gradient(135deg, transparent, transparent $stripe_width, $color_2 $stripe_width, $color_2 2 * $stripe_width);
+}
+
+
+
+// Brightness Funtciotn from https://gist.github.com/jlong/f06f5843104ee10006fe by @jlong
+ 
+$red-magic-number: 241;
+$green-magic-number: 691;
+$blue-magic-number: 68;
+$brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-number;
+ 
+@function brightness($color) {
+  // Extract color components
+  $red-component: red($color);
+  $green-component: green($color);
+  $blue-component: blue($color);
+ 
+  // Calculate a brightness value in 3d color space between 0 and 255
+  $number: sqrt((($red-component * $red-component * $red-magic-number) + ($green-component * $green-component * $green-magic-number) + ($blue-component * $blue-component * $blue-magic-number)) / $brightness-divisor);
+ 
+  // Convert to percentage and return
+  @return 100% * $number / 255;
+}
+ 
+@function contrasting-color($color, $light, $dark) {
+  @if brightness($color) < 65% {
+    @return $light;
+  } @else {
+    @return $dark;
+  }
+}
+
+
+
+
+@mixin colorize($prefix, $attr, $custom:none, $extra:""){
+  @each $color in $colors {
+
+    $selector:"";
+    @if $prefix != "" {
+      @if $extra != "" {
+        $selector: '&.#{$prefix}-#{nth($color,1)}#{$extra}';
+      } @else {
+        $selector: '&.#{$prefix}-#{nth($color,1)}';
+      }
+    } @else {
+      @if $extra != "" {
+          $selector: '&.#{nth($color,1)}#{$extra}';
+        } @else {
+          $selector: '&.#{nth($color,1)}';
+        }
+    }
+    
+    #{$selector}{
+      @if $attr != "" {
+        #{$attr}:nth($color,2);
+      } 
+      
+      // ------------------ btn
+      @if $custom == "btn" { 
+          color: contrasting-color(nth($color,2), $light-grey, $middle-grey);;
+          &:hover{
+            color: darken(contrasting-color(nth($color,2), $light-grey, $middle-grey),5);
+            #{$attr}:darken(nth($color,2),5);
+          }
+      } 
+      // ------------------ /btn
+
+
+      // ------------------ btn-icon-circle
+      @if $custom == "btn-icon-circle" { 
+        &:hover{ background: darken(nth($color,2),10); }
+        &.long-shadow i { @include long-shadow(text, darken(nth($color,2), 5), 20, true, false, right); }
+      } 
+      // ------------------ /btn-icon-circle
+
+
+      // ------------------ accordion
+      @if $custom == "accordion" {
+        color: contrasting-color(nth($color,2), $light-grey, $middle-grey);
+        &:after{
+          border-top:5px solid contrasting-color(nth($color,2), $light-grey, $middle-grey);
+        }
+        .accordion input.step-chk:checked + &:after {
+          border-bottom:5px solid contrasting-color(nth($color,2), $light-grey, $middle-grey);
+        }
+        .accordion input.step-chk:checked ~ & {
+          background: darken(nth($color,2),5);
+        }
+        &:hover{ 
+          background: darken(nth($color,2),5);
+          color: contrasting-color(nth($color,2), $light-grey, $middle-grey);
+        }
+      } 
+      // ------------------ /btn-icon-circle
+
+
+      // ------------------ list
+      @if $custom == "list" { 
+        &.long-shadow { @include long-shadow(text, darken(nth($color,2), 5), 20, true, false, right); }
+      } 
+      // ------------------ /list
+
+
+      // ------------------ ttip
+      @if $custom == "ttip" {
+        &:before { border-top: 8px solid nth($color,2); }
+        &:after { color: contrasting-color(nth($color,2), $light-grey, $middle-grey); }
+      } 
+      // ------------------ /ttip
+
+
+      // ------------------ slider
+      @if $custom == "slider" {
+        background: rgba(nth($color,2),.85);
+        color: contrasting-color(nth($color,2), $light-grey, $middle-grey);
+         @media (max-width: 768px) {
+            background: rgba(nth($color,2),.65);
+            color: contrasting-color(rgba(nth($color,2),.65), $light-grey, $middle-grey);
+         }
+      } 
+      // ------------------ /slider
+      
+
+      // ------------------ section
+      @if $custom == "section" { 
+          color: contrasting-color(nth($color,2), $background, $middle-grey);
+      } 
+      // ------------------ /section
+
+
+      // ------------------ items
+      @if $custom == "items" {
+        color: contrasting-color(nth($color,2), $background, $middle-grey);
+        &:before { border-right: 12px solid nth($color,2); }
+      } 
+      // ------------------ /items
+
+    }
+
+  } // @each
+}
+
+
+
+
+
+
+@mixin spaces($prefix, $attr, $min, $max, $interval){
+  @for $i from $min to $max/$interval+1 {
+    $current-value: $i*$interval;
+    .#{$prefix}#{$current-value} { 
+      @if $current-value == 0 {
+        #{$attr}: $current-value * 1px!important;
+      } @else {
+        #{$attr}: $current-value * 1px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@mixin photo-slider($slides, $slide_time, $name: 'photo-slider', $slide_height:340px, $bg-anim: false) {
+  $total_time: $slide_time * $slides;
+  
+  
+  @include keyframes(photo-slider-opacity) {
+    #{100%/($slides)+100%/($slides*$slides*2)}, 100% { opacity: 0; visibility: hidden;  }
+    #{100%/($slides*$slides)}, #{100%/$slides}  { opacity: 1; visibility: visible; }
+  }
+  
+  @include keyframes(photo-slider-background) {
+    to { background-position: bottom center;}
+  }
+  
+  @include keyframes(photo-slider-text-left) {
+    #{100%/($slides)+100%/($slides*8)}, 100% {
+      @include vendorize(transform, translateX(-1000px));
+      opacity:0; visibility: hidden;
+    }
+    #{100%/($slides*4)}, #{100%/$slides} {
+      @include vendorize(transform, translateX(0));
+      opacity:1; visibility: visible;
+    }
+  }
+  
+  @include keyframes(photo-slider-text-right) {
+    #{100%/($slides)+100%/($slides*8)}, 100% {
+      @include vendorize(transform, translateX(1000px));
+      opacity:0; visibility: hidden;
+    }
+    #{100%/($slides*4)}, #{100%/$slides} {
+      @include vendorize(transform, translateX(0));
+      opacity:1; visibility: visible;
+    }
+  }
+  
+  
+  .#{$name} {
+    width: 100%;
+    height: $slide_height;
+    position: relative;
+    overflow: hidden;
+    &:hover .photo-slide, &:hover .stext { @include vendorize(animation-play-state, paused); }
+    .photo-slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      @include vendorize(animation, photo-slider-opacity $total_time linear infinite);
+      @include vendorize(animation-play-state, running);
+    }
+    
+    .slide-image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @if ($bg-anim) {
+          @include vendorize(animation, photo-slider-background $total_time linear infinite alternate);
+        }
+    }
+    
+    .slide-text {
+      position: absolute;
+      bottom: 10%;
+      z-index: 999;
+      @media (max-width: 768px) { 
+        width: 100%; 
+        .btn { margin: auto; float: none; }
+      }
+    }
+    
+    .stext { 
+        display: inline-block;
+        padding: 5px 10px;
+        // background-color: rgba($dark-grey,.85);
+        color:$background;
+        opacity: 0;
+        @include vendorize(animation-duration, $total_time);
+        @include vendorize(animation-iteration-count, infinite);
+        @include vendorize(animation-timing-function, ease-in-out);
+        @include vendorize(animation-play-state, running);
+
+        @include colorize("", background, slider);
+
+        @media (max-width: 768px) {
+          text-align: center;
+          display: block;
+          // background-color: rgba($dark-grey, .5);
+        }
+      }
+    
+    .slide-text-left { 
+      left: 5%;
+      text-align: left;
+      .stext { 
+        @include vendorize(transform, translateX(-1000px));
+        @include vendorize(animation-name, photo-slider-text-left); 
+      }
+      @media (max-width: 768px) { left: auto; } 
+    }
+    
+    .slide-text-right { 
+      right: 5%;
+      text-align: right;
+      .stext { 
+        @include vendorize(transform, translateX(1000px));
+        @include vendorize(animation-name, photo-slider-text-right); 
+      } 
+      @media (max-width: 768px) {
+        right: auto;
+      }
+    }
+    
+    @for $i from 1 through $slides{
+      .photo-slide:nth-child(#{$i}) {
+        @include vendorize(animation-delay, $slide_time*$i - $slide_time);
+        .slide-text .stext {
+          @include vendorize(animation-delay, $slide_time*$i - $slide_time);
+        }
+        }
+    } 
+    
+  }
+}

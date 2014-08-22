@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+	viewBox="0 0 512 512" >
+<g id="diamond">
+	<g>
+		<polygon style="fill:#2EBA9B;" points="256,427.094 491.993,199.885 20.007,199.885 		"/>
+		<polygon style="fill:#17A186;" points="138.003,83.993 20.007,199.885 256,199.885 		"/>
+		<polygon style="fill:#25A086;" points="256,427.094 373.997,199.885 138.003,199.885 		"/>
+		<polygon style="fill:#17A186;" points="373.997,83.993 256,199.885 491.993,199.885 		"/>
+		<polygon style="fill:#2EBA9B;" points="256,199.885 373.997,83.993 138.003,83.993 		"/>
+		<polygon style="opacity:0.1;fill:#FFFFFF;" points="253.173,83.993 135.176,199.885 371.169,199.885 		"/>
+		<polygon style="opacity:0.2;fill:#17A186;" points="253.173,199.885 135.176,315.778 371.169,315.778 		"/>
+		<polygon style="opacity:0.1;fill:#FFFFFF;" points="138.003,315.778 256,199.885 20.007,199.885 		"/>
+		<polygon style="opacity:0.1;fill:#FFFFFF;" points="373.997,315.778 491.993,199.885 256,199.885 		"/>
+	</g>
+</g>
+</svg>
