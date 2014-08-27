@@ -2,7 +2,7 @@
 NewBancomail Pattern library
 ============================
 
-Ok. Maybe [this](http://elrumordelaluz.github.io/newbancomail/) is a Pattern Library, but fundamentally this is a great package we developed for the [new company website](http://__www.bancommunity.it/) styles.
+Ok. Maybe [this](http://elrumordelaluz.github.io/newbancomail/) is a Pattern Library, but fundamentally this is a great package we developed for the [new company website](http://www.bancommunity.it/) styles.
 
 We decided to share it because maybe it's useful for any new project, because we love your feedback and also to grow together.
 
