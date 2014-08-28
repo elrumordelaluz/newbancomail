@@ -134,7 +134,10 @@ $brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-numbe
 }
 
 
-
+// $prefix : Add a prefix to every color tu use as a Class (ie. "btn" => "btn-green", "btn-blue", etc);
+// $attr: The attribute to add the color in every iteration, like background-color, color, border-color, etc;
+// $custom (default: none) : it used to call a specific rule inside the main mixin, in case you need;
+// $extra : for extra selector after the element where the @mixin is applied (ie. $extra: ":before" => &:before);
 
 @mixin colorize($prefix, $attr, $custom:none, $extra:""){
   @each $color in $colors {
