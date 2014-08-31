@@ -4496,7 +4496,7 @@ hr.asphalt {
   margin-right: 60px;
 }
 .msg-subject-read:after {
-  content: 'leggi';
+  content: 'read';
   display: inline-block;
   position: absolute;
   bottom: -1px;
@@ -4528,7 +4528,7 @@ hr.asphalt {
 }
 
 .msg-subject:checked + label:after {
-  content: 'chiudi';
+  content: 'close';
   color: #e74c3c;
 }
 
