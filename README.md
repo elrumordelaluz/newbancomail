@@ -7,7 +7,7 @@ Ok. Maybe [this](http://elrumordelaluz.github.io/newbancomail/) is a Pattern Lib
 We decided to share it because maybe it's useful for any new project, because we love your feedback and also to grow together.
 
 We started to develope it, just based on our website needs so feel free to use, change and add any new feature you need inside. 
-One important thing is that we do not support if there is a bug or something like this. We hope you contribute, maybe make a pull request and so on. We still updating the library based on our website upgrades also.
+One important thing is that we do not support if there is a bug or something like this. We hope you contribute, maybe make a pull request and so on. We still updating the library based on our website needs.
 
 Project page and docs: http://elrumordelaluz.github.io/newbancomail/
 
